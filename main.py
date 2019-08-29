@@ -8,6 +8,8 @@ def home():
     return "Hello, World!"
 
 
+# added a route, like a subdirectory
+# pushing update check within PyCharm to Git repo
 @app.route("/salvador")
 def salvador():
     return "Hello, Salvador"
