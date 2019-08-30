@@ -5,7 +5,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Hello, World!"
+    # return "Hello, World!"
+    return render_template("home.html")
 
 
 # added a route, like a subdirectory
