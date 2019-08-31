@@ -10,10 +10,15 @@ def home():
 
 
 # added a route, like a subdirectory
-# pushing update check within PyCharm to Git repo
 @app.route("/salvador")
 def salvador():
     return "Hello, Salvador"
+
+
+# my own subdirectory
+@app.route("/stowers")
+def stowers():
+    return "Hello, Robert.  Welcome back!"
 
 
 if __name__ == "__main__":
