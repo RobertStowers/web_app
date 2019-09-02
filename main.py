@@ -9,9 +9,9 @@ def index():
 
 
 # added a route, like a subdirectory
-@app.route("/api/v1/convert/<fahrenheit_value>")
-def converter(fahrenheit_value):
-    return fahrenheit_value;
+@app.route("/api/v1/convert/<celsius_value>")
+def converter(celsius_value):
+    return str(((9 / 5) * float(celsius_value)) + 32);
 
 
 # added a route, like a subdirectory
