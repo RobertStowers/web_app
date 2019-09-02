@@ -1,5 +1,6 @@
 # web_app
 Create my first web application, following Free Code Camp, using Flask.
+Morphing into a 1D Heat Transfer calculator.
 
 ## Background
 Per Free Code Camp:
