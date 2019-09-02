@@ -10,12 +10,57 @@
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
           crossorigin="anonymous">
 
-    <title>Temperature Calculator</title>
+    <title>1D Heat Transfer Calculator</title>
 </head>
 
 <body>
 <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
-    <a class="navbar-brand" href="#">Temperature Converter</a>
+    <a class="navbar-brand" href="#">Heat Transfer Sandwich Calculation</a>
+</nav>
+
+<main role="main" class="container">
+    <div class="jumbotron">
+        <h1>Material Thickness</h1>
+        <form>
+            <div class="form-group">
+                <label for="Material1tkInput">First Material Thickness</label>
+                <input type="decimal" class="form-control" id="Material1tkInput" placeholder="Enter Material Thickness [in]">
+            </div>
+<!--            <button type="submit" id="convertButton" class="btn btn-primary">Convert</button>
+            <div id="celsiusSolutionTitle" hidden="true">
+                The temp in celsius is: <span id="celsiusSolutionValue">UNKNOWN</span>
+            </div> -->
+        </form>
+    </div>
+</main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    <script src="static/tempConverter.js"></script>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+    <a class="navbar-brand" href="#">Heat Transfer Boundary Conditions</a>
+</nav>
+
+<main role="main" class="container">
+    <div class="jumbotron">
+        <h1>Boundary Temperature</h1>
+        <form>
+            <div class="form-group">
+                <label for="tempInput">Input Temperature</label>
+                <input type="decimal" class="form-control" id="tempInput" placeholder="Enter Temperature [F]">
+            </div>
+<!--            <button type="submit" id="convertButton" class="btn btn-primary">Convert</button>
+            <div id="celsiusSolutionTitle" hidden="true">
+                The temp in celsius is: <span id="celsiusSolutionValue">UNKNOWN</span>
+            </div> -->
+        </form>
+    </div>
+</main>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+    <a class="navbar-brand" href="#">Heat Transfer Solution</a>
 </nav>
 
 <main role="main" class="container">
@@ -34,10 +79,6 @@
     </div>
 </main>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-            crossorigin="anonymous"></script>
-    <script src="static/tempConverter.js"></script>
 </body>
 
 </html>
