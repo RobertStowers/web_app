@@ -2,6 +2,8 @@
 Material Properties
 """
 
+import numpy as np
+
 
 def conductivity(material, temperature):
     """
@@ -21,5 +23,5 @@ def conductivity(material, temperature):
              0.0368, 0.04007, 0.04325, 0.04635, 0.04941)
 
     # insert interpolation
-    
+
     return 1
