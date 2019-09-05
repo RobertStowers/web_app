@@ -42,4 +42,4 @@ def conductivity(material, temperature):
 
     return cond
 
-print(conductivity('air',1000))
+# print(conductivity('air',1000))
