@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+import properties as prop
 
 app = Flask(__name__, static_folder='static')
 
@@ -12,6 +13,12 @@ def index():
 @app.route("/api/v1/convert/<celsius_value>")
 def converter(celsius_value):
     return str(((9 / 5) * float(celsius_value)) + 32)
+
+
+# calculate conductivity
+@app.route("/api/v1/conductivity/<temp_value>")
+def air_cond(temp_value):
+    return str(prop.conductivity('AIR', temp_value))
 
 
 # added a route, like a subdirectory
