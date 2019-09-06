@@ -8,11 +8,11 @@ import numpy as np
 def conductivity(material, temperature):
     """
     conductivity
-    :param material:
+    :param material: string, required
         Name of Material
-    :param temperature:
+    :param temperature: float, required
         Temperature of Material in [F]
-    :return:
+    :return: float
         Conductivity of Material at Given Temperature in [Btu/(hr*ft*F)]
     """
 
@@ -26,14 +26,14 @@ def conductivity(material, temperature):
                  0.01911, 0.02018, 0.02123, 0.02226, 0.02327, 0.02426, 0.0262, 0.02807, 0.0299, 0.03342,
                  0.0368, 0.04007, 0.04325, 0.04635, 0.04941]
     elif material.upper() == "ALUMINUM":
-        T = [-100, 100]
-        k = [10, 10]
+        T = [-99.4, 32, 261, 621, 981]
+        k = [137, 136, 139, 134, 127]
     elif material.upper() == "COPPER":
-        T = [-100, 100]
-        k = [10, 10]
+        T = [-99.4, 32, 261, 621, 981, 1341, 1701]
+        k = [239, 232, 227, 221, 214, 206, 198]
     elif material.upper() == "TITANIUM":
-        T = [-100, 100]
-        k = [10, 10]
+        T = [-99.4, 32, 261, 621, 981, 1341, 1701]
+        k = [14.2, 12.9, 11.8, 11.2, 11.4, 12, 12.7]
     else:
         T = [-1, 1]
         k = [1, 1]
@@ -42,4 +42,4 @@ def conductivity(material, temperature):
 
     return cond
 
-# print(conductivity('air',1000))
+# print(conductivity('copper',1000))
