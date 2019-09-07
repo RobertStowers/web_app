@@ -21,16 +21,16 @@ def air_cond(temp_value):
     return str(prop.conductivity('AIR', temp_value))
 
 
-# added a route, like a subdirectory
-@app.route("/api/v1/salvador")
-def salvador():
-    return "Hello, Salvador"
-
-
-# my own subdirectory
-@app.route("/api/v1/stowers")
-def stowers():
-    return "Hello, Robert.  Welcome back!"
+# # added a route, like a subdirectory
+# @app.route("/api/v1/salvador")
+# def salvador():
+#     return "Hello, Salvador"
+#
+#
+# # my own subdirectory
+# @app.route("/api/v1/stowers")
+# def stowers():
+#     return "Hello, Robert.  Welcome back!"
 
 
 if __name__ == "__main__":
