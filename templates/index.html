@@ -21,23 +21,17 @@
 <main role="main" class="container">
     <div class="jumbotron">
         <h1>Material Thickness</h1>
-        <form>
+        <div>
             <div class="form-group">
                 <label for="Material1tkInput">First Material Thickness</label>
                 <input type="decimal" class="form-control" id="Material1tkInput" placeholder="Enter Material Thickness [in]">
             </div>
-<!--            <button type="submit" id="convertButton" class="btn btn-primary">Convert</button>
-            <div id="celsiusSolutionTitle" hidden="true">
-                The temp in celsius is: <span id="celsiusSolutionValue">UNKNOWN</span>
-            </div> -->
-        </form>
+
+        </div>
     </div>
 </main>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-            crossorigin="anonymous"></script>
-    <script src="static/tempConverter.js"></script>
+
 
 <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
     <a class="navbar-brand" href="#">Heat Transfer Boundary Conditions</a>
@@ -46,16 +40,16 @@
 <main role="main" class="container">
     <div class="jumbotron">
         <h1>Boundary Temperature</h1>
-        <form>
+        <div>
             <div class="form-group">
                 <label for="tempInput">Input Temperature [F]</label>
                 <input type="decimal" class="form-control" id="tempInput" placeholder="Enter Temperature [F]">
             </div>
-            <button type="submit" id="condButton" class="btn btn-primary">Get Air Conductivity</button>
+            <button id="condButton" class="btn btn-primary">Get Air Conductivity</button>
             <div id="AirCondTitle" hidden="false">
                 The Air Conductivity is [Btu/(hr*ft*F)]: <span id="AirCondValue">UNKNOWN</span>
             </div>
-        </form>
+        </div>
     </div>
 </main>
 
@@ -66,19 +60,23 @@
 <main role="main" class="container">
     <div class="jumbotron">
         <h1>Temperature Converter</h1>
-        <form>
+        <div>
             <div class="form-group">
                 <label for="celsiusInput">Input Temperature</label>
                 <input type="decimal" class="form-control" id="celsiusInput" placeholder="Enter Celsius Temperature">
             </div>
-            <button type="submit" id="convertButton" class="btn btn-primary">Convert</button>
+            <button id="convertButton" class="btn btn-primary">Convert</button>
             <div id="celsiusSolutionTitle" hidden="true">
                 The temp in celsius is: <span id="celsiusSolutionValue">UNKNOWN</span>
             </div>
-        </form>
+        </div>
     </div>
 </main>
-
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    <script src="static/tempConverter.js"></script>
+    <script src="static/AirCond.js"></script>
 </body>
 
 </html>
