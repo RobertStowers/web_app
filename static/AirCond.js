@@ -7,5 +7,5 @@ $("#condButton").click(function () {
 });
 
 $("#tempInput").on('input', function () {
-    $("#AirCondTitle").attr("hidden", false);
+    $("#AirCondTitle").attr("hidden", true);
 });
