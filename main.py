@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 import properties as prop
+import heat_transfer as ht
 
 app = Flask(__name__, static_folder='static')
 
@@ -19,6 +20,22 @@ def converter(celsius_value):
 @app.route("/api/v1/conductivity/<temp_value>")
 def air_cond(temp_value):
     return str(prop.conductivity('AIR', temp_value))
+
+
+# calculate conductivity
+@app.route("/api/v1/solve1d/<inputs>")
+def solve1d(inputs):
+    """
+    Receives string of inputs separated by '_'
+
+    :param inputs:
+        Material, Material tk, T hot side, HTC hot side, T cold side, HTC cold side
+    :return:
+        Final T of solid hot side, avg, cold side
+    """
+    
+    input_1d = inputs.split("_")
+    return str(ht.solver(input_1d))
 
 
 # # added a route, like a subdirectory
