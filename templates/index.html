@@ -20,8 +20,17 @@
 
 <main role="main" class="container">
     <div class="jumbotron">
-        <h1>Material Thickness</h1>
+        <h1>Material & Thickness</h1>
         <div>
+            <div class="form-group">
+                <label for="Material1Input">Select Material</label>
+                    <ol>
+                        <li>Aluminum</li>
+                        <li>Copper</li>
+                        <li>Titanium</li>
+                    </ol>
+                <input type="decimal" class="form-control" id="Material1Input" placeholder="Enter Material Number">
+            </div>
             <div class="form-group">
                 <label for="Material1tkInput">First Material Thickness</label>
                 <input type="decimal" class="form-control" id="Material1tkInput" placeholder="Enter Material Thickness [in]">
@@ -36,16 +45,31 @@
 
 <main role="main" class="container">
     <div class="jumbotron">
-        <h1>Boundary Temperature</h1>
+        <h1>Convective Boundary Conditions</h1>
+        <h2>Hot Side Temperature & HTC</h2>
         <div>
             <div class="form-group">
-                <label for="tempInput">Input Temperature [F]</label>
-                <input type="decimal" class="form-control" id="tempInput" placeholder="Enter Temperature [F]">
+                <label for="hsTempInput">Hot Side Temperature [F]</label>
+                <input type="decimal" class="form-control" id="hsTempInput" placeholder="Enter Temperature [F]">
             </div>
-            <button id="condButton" class="btn btn-primary">Get Air Conductivity</button>
+            <div class="form-group">
+                <label for="hsHInput">Hot Side HTC [Btu/(hr*ft^2*F)]</label>
+                <input type="decimal" class="form-control" id="hsHInput" placeholder="Enter HTC">
+            </div>
+        <h2>Cold Side Temperature & HTC</h2>
+        <div>
+            <div class="form-group">
+                <label for="csTempInput">Cold Side Temperature [F]</label>
+                <input type="decimal" class="form-control" id="csTempInput" placeholder="Enter Temperature [F]">
+            </div>
+            <div class="form-group">
+                <label for="csHInput">Cold Side HTC [Btu/(hr*ft^2*F)]</label>
+                <input type="decimal" class="form-control" id="csHInput" placeholder="Enter HTC">
+            </div>
+<!--            <button id="condButton" class="btn btn-primary">Get Air Conductivity</button>
             <div id="AirCondTitle" hidden="true">
                 The Air Conductivity is [Btu/(hr*ft*F)]: <span id="AirCondValue">UNKNOWN</span>
-            </div>
+            </div> -->
         </div>
     </div>
 </main>
