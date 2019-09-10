@@ -80,16 +80,22 @@
 
 <main role="main" class="container">
     <div class="jumbotron">
-        <h1>Temperature Converter</h1>
+        <h1>1D Solver</h1>
         <div>
-            <div class="form-group">
+<!--            <div class="form-group">
                 <label for="celsiusInput">Input Temperature</label>
                 <input type="decimal" class="form-control" id="celsiusInput" placeholder="Enter Celsius Temperature">
             </div>
             <button id="convertButton" class="btn btn-primary">Convert</button>
             <div id="celsiusSolutionTitle" hidden="true">
                 The temp in celsius is: <span id="celsiusSolutionValue">UNKNOWN</span>
+            </div> -->
+
+            <button id="SolveButton" class="btn btn-primary">Solve 1D</button>
+            <div id="SolveTitle" hidden="true">
+                The material is: <span id="SolveValue">UNKNOWN</span>
             </div>
+
         </div>
     </div>
 </main>
@@ -98,6 +104,7 @@
             crossorigin="anonymous"></script>
     <script src="static/tempConverter.js"></script>
     <script src="static/AirCond.js"></script>
+    <script src="static/solve1d.js"></script>
 </body>
 
 </html>
