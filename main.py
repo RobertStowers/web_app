@@ -33,9 +33,10 @@ def solve1d(inputs):
     :return:
         Final T of solid hot side, avg, cold side
     """
-    
+
     input_1d = inputs.split("_")
-    return str(ht.solver(input_1d))
+    # return str(ht.solver(input_1d))
+    return ht.solver(input_1d)
 
 
 # # added a route, like a subdirectory

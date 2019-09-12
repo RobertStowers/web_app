@@ -27,5 +27,5 @@ def solver(matl):
     return ans
 
 
-george = ["1", 1, "mom"]
-print(solver(george))
+# george = ["1", 1, "mom"]
+# print(solver(george))
