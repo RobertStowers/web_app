@@ -27,5 +27,9 @@ def solver(matl):
     return ans
 
 
+def convert(cels_temp):
+    return ((9 / 5) * cels_temp) + 32
+
+
 # george = ["1", 1, "mom"]
 # print(solver(george))
