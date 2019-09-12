@@ -51,5 +51,8 @@ def solve1d(inputs):
 #     return "Hello, Robert.  Welcome back!"
 
 
+# george = "1_1_mom"
+# print(solve1d(george))
+
 if __name__ == "__main__":
     app.run(debug=True)
